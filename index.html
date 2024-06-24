@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Game</title>
+        <style>
+            body {
+                background-color: #282c34; /* Dark background */
+                color: #ffffff; /* Light text */
+                font-family: 'Roboto', sans-serif; /* Modern font */
+            }
+            
+            .game-container {
+                border: 3px solid #76b900; /* Bright border color */
+                padding: 20px;
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Subtle shadow */
+            }
+            
+            #gameCanvas {
+                background-color: #333; /* Slightly lighter than body for contrast */
+                display: block; /* Prevents bottom margin/padding */
+                margin: 0 auto; /* Center the canvas */
+            }
+            
+            .score {
+                font-size: 1.5em; /* Larger text */
+                font-weight: bold;
+                color: #76b900; /* Bright color for visibility */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div>Score: <span class="score">0</span></div>        
+        </div>
+        <script src="snake.js"></script>
+    </body>
+</html>
